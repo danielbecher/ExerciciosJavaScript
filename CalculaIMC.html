@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <title>CalculaIMC</title>
+</head>
+<body>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+    
+    function mostra(msg) {
+        document.write(msg);
+        pulaLinha();
+    }
+    
+    function calculaImc(peso, altura) {
+       var imc = peso / (altura * altura);
+       return imc
+    }
+
+    mostra("O IMC da pessoa é " + Math.round(calculaImc(73,1.71)));
+</script>
+
+</body>
+</html>
