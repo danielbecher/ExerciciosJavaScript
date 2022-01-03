@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <title>CalculaIMC</title>
+</head>
+<body>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+    
+    function mostra(msg) {
+        document.write(msg);
+        pulaLinha();
+    }
+  
+    var vitorias = parseInt(prompt("Entre com o número de vitórias: "));
+    var empates = parseInt(prompt("Entre com o número de empates: "));
+    var pontospassados = parseInt(prompt("Quantos pontos seu time fez no ano passado?"));
+    var pontos = (vitorias * 3) + empates;
+    
+    mostra("Os pontos do seu time são "+pontos);
+
+    if (pontos > pontospassados)
+        mostra("Seu time está melhor do que no ano passado");
+    
+    if (pontos < pontospassados)
+        mostra("Seu time estã pior do que no ano passado");
+    
+    if (pontos == pontospassados) 
+        mostra("Seu time está igual ao ano passado");
+</script>
+
+</body>
+</html>
